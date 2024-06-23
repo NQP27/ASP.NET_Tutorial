@@ -3,21 +3,20 @@
 GET http://localhost:5018/games
 
 ###
-GET http://localhost:5018/games/
+GET http://localhost:5018/games/2
 
 ###
 POST http://localhost:5018/games
 Content-Type: application/json
 
 {
-  "name": "Minecraft",
-  "genre": "Kids",
+  "name": "Brawhalla",
+  "genreId": 5,
   "price": 19.99,
   "releaseDate": "2011-11-18"
 }
 
 ###
-
 PUT http://localhost:5018/games/2
 Content-Type: application/json
 
@@ -27,4 +26,7 @@ Content-Type: application/json
   "price": 19.99,
   "releaseDate": "2011-11-18"
 }
+
+###
+DELETE http://localhost:5018/games/2
 
