@@ -42,6 +42,8 @@ public static class GamesEndpoints
         })
             .WithName(GetGameEndPointName);
 
+
+
         group.MapPost("/", (CreateGameDto newGame) =>
         {
             GameDto game = new(
